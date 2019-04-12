@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated PrimerPO -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="com.example.ppo.presentation.PpoModelWizardID"
+            name="%_UI_PpoModelWizard_label"
+            class="com.example.ppo.presentation.PpoModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/PpoModelFile.gif">
+         <description>%_UI_PpoModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated PrimerPO -->
+      <editor
+            id="com.example.ppo.presentation.PpoEditorID"
+            name="%_UI_PpoEditor_label"
+            icon="icons/full/obj16/PpoModelFile.gif"
+            extensions="ppo"
+            class="com.example.ppo.presentation.PpoEditor"
+            contributorClass="com.example.ppo.presentation.PpoActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
